@@ -1,0 +1,14 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Jonnitto.MultiColumn': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'Jonnitto.MultiColumn': ['NodeTypes/*']
+
+Jonnitto:
+  MultiColumn:
+    rowClass: row

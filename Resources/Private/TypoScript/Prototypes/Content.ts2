@@ -1,0 +1,46 @@
+prototype(MC:Content) < prototype(NT:Content) {
+	@context {
+		mcConfig = ${this.mcConfig}
+		needContainer = ${this.isOnDocument && this.isContentElement}
+		align = NT:WrapIfPropertyIsSet {
+			prepend = 'row-xs-'
+			property = 'align'
+		}
+		onlyImages = TS:Case {
+			@context.contentCount = ${q(node).find('[instanceof TYPO3.Neos:Content]').count()}
+			noContent {
+				condition = ${contentCount == 0}
+				renderer = false
+			}
+			onlyImages {
+				condition = ${q(node).find('[instanceof Jonnitto.NodeTypes:Image][image]').count() == contentCount}
+				renderer = 'row-only-images'
+			}
+		}
+	}
+	isContentElement = true
+	mcConfig = ${Configuration.setting('Jonnitto.MultiColumn')}
+
+	attributes.class {
+		row = ${needContainer ? false : mcConfig.rowClass}
+		align = ${align && !isOnDocument ? align : false}
+		onlyImages = ${onlyImages && !isOnDocument ? onlyImages : false}
+	}
+
+	content = TS:Array {
+		openRow = TS:Tag {
+			attributes.class = TS:RawArray {
+				row = ${mcConfig.rowClass}
+				align = ${align}
+				onlyImages = ${onlyImages}
+			}
+			omitClosingTag = true
+			@if.needContainer = ${needContainer}
+			@position = 'start'
+		}
+		columns = MC:Collection
+		closeRow = ${needContainer ? '</div>' : ''}
+		closeRow.@position = 'end'
+	}
+	@if.render = true
+}

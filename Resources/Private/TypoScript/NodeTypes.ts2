@@ -1,0 +1,16 @@
+prototype(MC:1) < prototype(NT:Content) {
+	isContentElement = true
+	content = ContentCollection {
+		nodePath = 'content'
+	}
+	@if.render = true
+}
+prototype(MC:2) < prototype(MC:Content)
+prototype(MC:3) < prototype(MC:Content)
+prototype(MC:4) < prototype(MC:Content) {
+	prototype(MC:ContentCollection).attributes.class {
+		@context.hasNoLayout = ${!layoutXS && !layoutSM && !layoutMD && !layoutLG && !layoutXL}
+		sm = ${layoutSM ? 'col-sm-' + String.split(layoutSM, '-')[multiColumnIteration.index] : hasNoLayout ? 'col-sm-6' : false}
+		md = ${layoutMD ? 'col-md-' + String.split(layoutMD, '-')[multiColumnIteration.index] : hasNoLayout ? 'col-md-3' : false}
+	}
+}

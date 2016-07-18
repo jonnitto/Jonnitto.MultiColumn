@@ -1,0 +1,141 @@
+'Jonnitto.MultiColumn:Mixin2XS':
+  abstract: TRUE
+  properties:
+    layoutXS:
+      type: string
+      ui:
+        label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXS'
+        reloadIfChanged: TRUE
+        inspector:
+          group: column
+          position: 10
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: TRUE
+            values:
+              4-8:
+                label: '33% | 66%'
+              6-6:
+                label: '50% | 50%'
+              8-4:
+                label: '66% | 33%'
+
+'Jonnitto.MultiColumn:Mixin2SM':
+  abstract: TRUE
+  properties:
+    layoutSM:
+      type: string
+      ui:
+        label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutSM'
+        reloadIfChanged: TRUE
+        inspector:
+          group: column
+          position: 20
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: TRUE
+            values:
+              2-10:
+                label: '16% | 84%'
+              3-9:
+                label: '25% | 75%'
+              4-8:
+                label: '33% | 66%'
+              6-6:
+                label: '50% | 50%'
+              8-4:
+                label: '66% | 33%'
+              9-3:
+                label: '75% | 25%'
+              10-2:
+                label: '84% | 16%'
+
+'Jonnitto.MultiColumn:Mixin2MD':
+  abstract: TRUE
+  properties:
+    layoutMD:
+      type: string
+      ui:
+        label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutMD'
+        reloadIfChanged: TRUE
+        inspector:
+          group: column
+          position: 30
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: TRUE
+            values:
+              2-10:
+                label: '16% | 84%'
+              3-9:
+                label: '25% | 75%'
+              4-8:
+                label: '33% | 66%'
+              6-6:
+                label: '50% | 50%'
+              8-4:
+                label: '66% | 33%'
+              9-3:
+                label: '75% | 25%'
+              10-2:
+                label: '84% | 16%'
+
+'Jonnitto.MultiColumn:Mixin2LG':
+  abstract: TRUE
+  properties:
+    layoutLG:
+      type: string
+      ui:
+        label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutLG'
+        reloadIfChanged: TRUE
+        inspector:
+          group: column
+          position: 40
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: TRUE
+            values:
+              2-10:
+                label: '16% | 84%'
+              3-9:
+                label: '25% | 75%'
+              4-8:
+                label: '33% | 66%'
+              6-6:
+                label: '50% | 50%'
+              8-4:
+                label: '66% | 33%'
+              9-3:
+                label: '75% | 25%'
+              10-2:
+                label: '84% | 16%'
+
+'Jonnitto.MultiColumn:Mixin2XL':
+  abstract: TRUE
+  properties:
+    layoutXL:
+      type: string
+      ui:
+        label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXL'
+        reloadIfChanged: TRUE
+        inspector:
+          group: column
+          position: 50
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: TRUE
+            values:
+              2-10:
+                label: '16% | 84%'
+              3-9:
+                label: '25% | 75%'
+              4-8:
+                label: '33% | 66%'
+              6-6:
+                label: '50% | 50%'
+              8-4:
+                label: '66% | 33%'
+              9-3:
+                label: '75% | 25%'
+              10-2:
+                label: '84% | 16%'

@@ -1,0 +1,20 @@
+# If you want to use this 1 Column (for fancy css stuff), just put abstract to false
+'Jonnitto.MultiColumn:1':
+  abstract: true
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    content:
+      type: 'TYPO3.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Jonnitto.MultiColumn:1': FALSE
+          'Jonnitto.MultiColumn:2': TRUE
+          'Jonnitto.MultiColumn:3': TRUE
+          'Jonnitto.MultiColumn:4': TRUE
+  ui:
+    label: 'Jonnitto.MultiColumn:NodeTypes.Column:1.ui.label'
+    group: structure
+    icon: icon-square-o
+    inlineEditable: TRUE
+    position: 100

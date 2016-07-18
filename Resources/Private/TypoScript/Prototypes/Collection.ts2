@@ -1,0 +1,6 @@
+prototype(MC:Collection) < prototype(TS:Collection) {
+	collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
+	itemName = 'node'
+	iterationName = 'iteration'
+	itemRenderer = MC:ContentCollection
+}

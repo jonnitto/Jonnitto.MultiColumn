@@ -1,0 +1,14 @@
+'Jonnitto.MultiColumn:Column':
+  abstract: true
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    group: structure
+    icon: icon-columns
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        column:
+          label: i18n
+          position: 10
+          icon: icon-columns

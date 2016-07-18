@@ -1,0 +1,6 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<div{attributes -> f:format.raw()}>
+	<f:if condition="{container}"><div{attributesRow -> f:format.raw()}></f:if>
+	<ts:render path="columns" />
+	<f:if condition="{container}"></div></f:if>
+</div>
