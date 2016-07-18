@@ -5,7 +5,7 @@ Jonnitto.MultiColumn
 [![Total Downloads](https://poser.pugx.org/jonnitto/multicolumn/downloads)](https://packagist.org/packages/jonnitto/multicolumn)
 [![License](https://poser.pugx.org/jonnitto/multicolumn/license)](https://packagist.org/packages/jonnitto/multicolumn)
 
-MultiColumn System for Neos. Please bring your own css
+MultiColumn System for [Neos](https://neos.io). Please bring your own css
 
 Grid
 ----
