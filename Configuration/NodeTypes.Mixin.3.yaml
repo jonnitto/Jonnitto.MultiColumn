@@ -20,7 +20,7 @@
               4-4-4:
                 label: '33% | 33% | 33%'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
 
 
 'Jonnitto.MultiColumn:Mixin3SM':
@@ -45,7 +45,7 @@
               4-4-4:
                 label: '33% | 33% | 33%'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3MD':
   abstract: TRUE
@@ -69,7 +69,7 @@
               4-4-4:
                 label: '33% | 33% | 33%'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3LG':
   abstract: TRUE
@@ -93,7 +93,7 @@
               4-4-4:
                 label: '33% | 33% | 33%'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3XL':
   abstract: TRUE
@@ -117,7 +117,7 @@
               4-4-4:
                 label: '33% | 33% | 33%'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
 
 
 'Jonnitto.MultiColumn:Mixin3XS2Row':
@@ -145,7 +145,7 @@
                 label: '33% | 33% | 33%'
                 group: '1 Row'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
                 group: '1 Row'
               12-6-6:
                 label: '100% || 50% | 50%'
@@ -180,7 +180,7 @@
                 label: '33% | 33% | 33%'
                 group: '1 Row'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
                 group: '1 Row'
               12-6-6:
                 label: '100% || 50% | 50%'
@@ -214,7 +214,7 @@
                 label: '33% | 33% | 33%'
                 group: '1 Row'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
                 group: '1 Row'
               12-6-6:
                 label: '100% || 50% | 50%'
@@ -248,7 +248,7 @@
                 label: '33% | 33% | 33%'
                 group: '1 Row'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
                 group: '1 Row'
               12-6-6:
                 label: '100% || 50% | 50%'
@@ -282,7 +282,7 @@
                 label: '33% | 33% | 33%'
                 group: '1 Row'
               6-3-3:
-                label: '50% | 25% | 33%'
+                label: '50% | 25% | 25%'
                 group: '1 Row'
               12-6-6:
                 label: '100% || 50% | 50%'
