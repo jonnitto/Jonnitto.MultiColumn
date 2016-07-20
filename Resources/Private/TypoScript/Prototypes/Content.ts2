@@ -1,6 +1,6 @@
 prototype(MC:Content) < prototype(NT:Content) {
 	@context {
-		mcConfig = ${this.mcConfig}
+		mcConfig = ${Configuration.setting('Jonnitto.MultiColumn')}
 		needContainer = ${this.isOnDocument && this.isContentElement}
 		align = NT:WrapIfPropertyIsSet {
 			prepend = 'row-xs-'
@@ -17,9 +17,13 @@ prototype(MC:Content) < prototype(NT:Content) {
 				renderer = 'row-only-images'
 			}
 		}
+		layoutXS = ${q(node).property('layoutXS')}
+		layoutSM = ${q(node).property('layoutSM')}
+		layoutMD = ${q(node).property('layoutMD')}
+		layoutLG = ${q(node).property('layoutLG')}
+		layoutXL = ${q(node).property('layoutXL')}
 	}
 	isContentElement = true
-	mcConfig = ${Configuration.setting('Jonnitto.MultiColumn')}
 
 	attributes.class {
 		row = ${needContainer ? false : mcConfig.rowClass}

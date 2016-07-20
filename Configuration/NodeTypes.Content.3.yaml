@@ -1,7 +1,7 @@
 'Jonnitto.MultiColumn:3':
   superTypes:
     'Jonnitto.MultiColumn:Column': TRUE
-    'Jonnitto.MultiColumn:Mixin3SM': TRUE
+    'Jonnitto.MultiColumn:Mixin3MD': TRUE
   childNodes:
     column-1:
       type: 'TYPO3.Neos:ContentCollection'
@@ -19,7 +19,7 @@
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:3.ui.label'
   properties:
-    layoutSM:
+    layoutMD:
       defaultValue: 4-4-4
 
 # To add more options you can add following Mixins to your Settings.yaml

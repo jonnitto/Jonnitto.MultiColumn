@@ -1,10 +1,4 @@
 prototype(MC:ContentCollection) < prototype(ContentCollection) {
-	@context.layoutXS = ${q(node).parent().property('layoutXS')}
-	@context.layoutSM = ${q(node).parent().property('layoutSM')}
-	@context.layoutMD = ${q(node).parent().property('layoutMD')}
-	@context.layoutLG = ${q(node).parent().property('layoutLG')}
-	@context.layoutXL = ${q(node).parent().property('layoutXL')}
-
 	attributes = TS:Attributes {
 		class = TS:RawArray {
 			num = ${'col-num-' + (iteration.index + 1)}
@@ -15,5 +9,4 @@ prototype(MC:ContentCollection) < prototype(ContentCollection) {
 			xl = ${layoutXL ? 'col-xl-' + String.split(layoutXL, '-')[iteration.index] : false}
 		}
 	}
-
 }
