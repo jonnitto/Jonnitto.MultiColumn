@@ -73,4 +73,6 @@ prototype(MC:MediaStyle) < prototype(TS:Case) {
 		condition = true
 		renderer = 'flex:1 1 0%;'
 	}
+
+	@if.hasMode = ${mode && !String.isBlank(mode) ? true : false}
 }

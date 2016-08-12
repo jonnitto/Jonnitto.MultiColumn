@@ -1,12 +1,15 @@
 $mediarow-breakpoint: 544px !default;
-$mediarow-class-row: jonnitto-multicolumn-media--row !default;
 $mediarow-gutter: 30px !default;
 
-.#{$mediarow-class-row} {
+.jonnitto-multicolumn-media--row {
 	$mediarow-half: $mediarow-gutter / 2;
-	margin-left: -$mediarow-half;
-	margin-right: -$mediarow-half;
-	clear: fix;
+	margin: 0 -#{$mediarow-half};
+
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 
 	.neos-empty-contentcollection-overlay {
 		width: 100%;
@@ -30,6 +33,7 @@ $mediarow-gutter: 30px !default;
 	}
 
 	@media (min-width: $mediarow-breakpoint) {
-		box: horizontal;
+		display: flex;
+		flex-direction: row;
 	}
 }

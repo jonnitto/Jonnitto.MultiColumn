@@ -13,7 +13,7 @@ Jonnitto:
   MultiColumn:
     rowClass: row
     Media:
-      defaultMode: height # height or width 
+      defaultMode: height # height || width || false
       baseWith: 2560
       class:
         containerFluid: false
