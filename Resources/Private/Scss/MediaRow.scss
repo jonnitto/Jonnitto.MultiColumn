@@ -16,7 +16,7 @@ $mediarow-gutter: 30px !default;
 	}
 
 	> * {
-		margin: $mediarow-gutter $mediarow-half;
+		margin: 0 $mediarow-half $mediarow-gutter;
 		display: block;
 		max-width: 100%;
 	}
