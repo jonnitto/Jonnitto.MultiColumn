@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Jonnitto.MultiColumn" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="1.ui.label" xml:space="preserve">
+				<source>Content container</source>
+			</trans-unit>
+			<trans-unit id="2.ui.label" xml:space="preserve">
+				<source>Two column content</source>
+			</trans-unit>
+			<trans-unit id="3.ui.label" xml:space="preserve">
+				<source>Three column content</source>
+			</trans-unit>
+			<trans-unit id="4.ui.label" xml:space="preserve">
+				<source>Four column content</source>
+			</trans-unit>
+			<trans-unit id="groups.column" xml:space="preserve">
+				<source>Layout of columns</source>
+			</trans-unit>
+			<trans-unit id="properties.layout" xml:space="preserve">
+				<source>Layout</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,15 +1,15 @@
 'Jonnitto.MultiColumn:3':
   superTypes:
-    'Jonnitto.MultiColumn:Column': TRUE
-    'Jonnitto.MultiColumn:Mixin3MD': TRUE
+    'Jonnitto.MultiColumn:Column': true
+    'Jonnitto.MultiColumn:Mixin3MD': true
   childNodes:
     column-1:
       type: 'TYPO3.Neos:ContentCollection'
       constraints: &columnConstraints
         nodeTypes:
-          'Jonnitto.MultiColumn:2': FALSE
-          'Jonnitto.MultiColumn:3': FALSE
-          'Jonnitto.MultiColumn:4': FALSE
+          'Jonnitto.MultiColumn:2': false
+          'Jonnitto.MultiColumn:3': false
+          'Jonnitto.MultiColumn:4': false
     column-2:
       type: 'TYPO3.Neos:ContentCollection'
       constraints: *columnConstraints
@@ -25,19 +25,19 @@
 # To add more options you can add following Mixins to your Settings.yaml
 # 'Jonnitto.MultiColumn:3':
 #     superTypes:
-#       'Jonnitto.MultiColumn:Mixin3XS': TRUE
-#       'Jonnitto.MultiColumn:Mixin3SM': TRUE
-#       'Jonnitto.MultiColumn:Mixin3MD': TRUE
-#       'Jonnitto.MultiColumn:Mixin3LG': TRUE
-#       'Jonnitto.MultiColumn:Mixin3XL': TRUE
-#       'Jonnitto.MultiColumn:MixinAlign': TRUE
+#       'Jonnitto.MultiColumn:Mixin3XS': true
+#       'Jonnitto.MultiColumn:Mixin3SM': true
+#       'Jonnitto.MultiColumn:Mixin3MD': true
+#       'Jonnitto.MultiColumn:Mixin3LG': true
+#       'Jonnitto.MultiColumn:Mixin3XL': true
+#       'Jonnitto.MultiColumn:MixinAlign': true
 
 # With 2 Rows
 # 'Jonnitto.MultiColumn:3':
 #     superTypes:
-#       'Jonnitto.MultiColumn:Mixin3XS2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin3SM2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin3MD2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin3LG2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin3XL2Row': TRUE
-#       'Jonnitto.MultiColumn:MixinAlign': TRUE
+#       'Jonnitto.MultiColumn:Mixin3XS2Row': true
+#       'Jonnitto.MultiColumn:Mixin3SM2Row': true
+#       'Jonnitto.MultiColumn:Mixin3MD2Row': true
+#       'Jonnitto.MultiColumn:Mixin3LG2Row': true
+#       'Jonnitto.MultiColumn:Mixin3XL2Row': true
+#       'Jonnitto.MultiColumn:MixinAlign': true

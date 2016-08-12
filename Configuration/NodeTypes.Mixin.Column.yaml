@@ -1,11 +1,11 @@
 'Jonnitto.MultiColumn:Column':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'TYPO3.Neos:Content': true
   ui:
     group: structure
     icon: icon-columns
-    inlineEditable: TRUE
+    inlineEditable: true
     inspector:
       groups:
         column:

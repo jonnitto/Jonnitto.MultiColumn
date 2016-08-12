@@ -1,5 +1,5 @@
 'Jonnitto.MultiColumn:MixinAlign':
-  abstract: TRUE
+  abstract: true
   ui:
     inspector:
       groups:
@@ -12,13 +12,13 @@
       defaultValue:
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: alignment
           position: 100
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               top:
                 label: i18n

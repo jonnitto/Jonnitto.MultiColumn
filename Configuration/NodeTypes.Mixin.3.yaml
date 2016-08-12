@@ -1,17 +1,17 @@
 'Jonnitto.MultiColumn:Mixin3XS':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXS:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXS'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 10
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -24,19 +24,19 @@
 
 
 'Jonnitto.MultiColumn:Mixin3SM':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutSM:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutSM'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 20
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -48,19 +48,19 @@
                 label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3MD':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutMD:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutMD'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 30
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -72,19 +72,19 @@
                 label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3LG':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutLG:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutLG'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 40
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -96,19 +96,19 @@
                 label: '50% | 25% | 25%'
 
 'Jonnitto.MultiColumn:Mixin3XL':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXL:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXL'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 50
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -121,19 +121,19 @@
 
 
 'Jonnitto.MultiColumn:Mixin3XS2Row':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXS:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXS'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 10
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -156,19 +156,19 @@
 
 
 'Jonnitto.MultiColumn:Mixin3SM2Row':
-  abstract: TRUE
+  abstract: true
   properties:
     layout:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutSM'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 20
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -190,19 +190,19 @@
                 group: '2 Rows'
 
 'Jonnitto.MultiColumn:Mixin3MD2Row':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutMD:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutMD'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 30
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -224,19 +224,19 @@
                 group: '2 Rows'
 
 'Jonnitto.MultiColumn:Mixin3LG2Row':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutLG:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutLG'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 40
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'
@@ -258,19 +258,19 @@
                 group: '2 Rows'
 
 'Jonnitto.MultiColumn:Mixin3XL2Row':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXL:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXL'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 50
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               3-3-6:
                 label: '25% | 25% | 50%'

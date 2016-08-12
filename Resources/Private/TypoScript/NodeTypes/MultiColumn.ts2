@@ -5,6 +5,7 @@ prototype(MC:1) < prototype(NT:Content) {
 	}
 	@if.render = true
 }
+
 prototype(MC:2) < prototype(MC:Content)
 
 prototype(MC:3) < prototype(MC:Content) {

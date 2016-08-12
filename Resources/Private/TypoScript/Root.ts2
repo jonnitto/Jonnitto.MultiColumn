@@ -3,4 +3,4 @@ namespace: MC=Jonnitto.MultiColumn
 namespace: TS=TYPO3.TypoScript
 
 include: Prototypes/**/*.ts2
-include: NodeTypes.ts2
+include: NodeTypes/**/*.ts2

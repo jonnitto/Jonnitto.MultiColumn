@@ -2,19 +2,19 @@
 'Jonnitto.MultiColumn:1':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'TYPO3.Neos:Content': true
   childNodes:
     content:
       type: 'TYPO3.Neos:ContentCollection'
       constraints:
         nodeTypes:
-          'Jonnitto.MultiColumn:1': FALSE
-          'Jonnitto.MultiColumn:2': TRUE
-          'Jonnitto.MultiColumn:3': TRUE
-          'Jonnitto.MultiColumn:4': TRUE
+          'Jonnitto.MultiColumn:1': false
+          'Jonnitto.MultiColumn:2': true
+          'Jonnitto.MultiColumn:3': true
+          'Jonnitto.MultiColumn:4': true
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:1.ui.label'
     group: structure
     icon: icon-square-o
-    inlineEditable: TRUE
+    inlineEditable: true
     position: 100

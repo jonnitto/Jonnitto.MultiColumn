@@ -1,14 +1,14 @@
 'Jonnitto.MultiColumn:4':
   superTypes:
-    'Jonnitto.MultiColumn:Column': TRUE
+    'Jonnitto.MultiColumn:Column': true
   childNodes:
     column-1:
       type: 'TYPO3.Neos:ContentCollection'
       constraints: &columnConstraints
         nodeTypes:
-          'Jonnitto.MultiColumn:2': FALSE
-          'Jonnitto.MultiColumn:3': FALSE
-          'Jonnitto.MultiColumn:4': FALSE
+          'Jonnitto.MultiColumn:2': false
+          'Jonnitto.MultiColumn:3': false
+          'Jonnitto.MultiColumn:4': false
     column-2:
       type: 'TYPO3.Neos:ContentCollection'
       constraints: *columnConstraints
@@ -25,19 +25,19 @@
 # To add more options you can add following Mixins to your Settings.yaml
 # 'Jonnitto.MultiColumn:4':
 #     superTypes:
-#       'Jonnitto.MultiColumn:Mixin4XS': TRUE
-#       'Jonnitto.MultiColumn:Mixin4SM': TRUE
-#       'Jonnitto.MultiColumn:Mixin4MD': TRUE
-#       'Jonnitto.MultiColumn:Mixin4LG': TRUE
-#       'Jonnitto.MultiColumn:Mixin4XL': TRUE
-#       'Jonnitto.MultiColumn:MixinAlign': TRUE
+#       'Jonnitto.MultiColumn:Mixin4XS': true
+#       'Jonnitto.MultiColumn:Mixin4SM': true
+#       'Jonnitto.MultiColumn:Mixin4MD': true
+#       'Jonnitto.MultiColumn:Mixin4LG': true
+#       'Jonnitto.MultiColumn:Mixin4XL': true
+#       'Jonnitto.MultiColumn:MixinAlign': true
 
 # With 2 Rows
 # 'Jonnitto.MultiColumn:4':
 #     superTypes:
-#       'Jonnitto.MultiColumn:Mixin4XS2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin4SM2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin4MD2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin4LG2Row': TRUE
-#       'Jonnitto.MultiColumn:Mixin4XL2Row': TRUE
-#       'Jonnitto.MultiColumn:MixinAlign': TRUE
+#       'Jonnitto.MultiColumn:Mixin4XS2Row': true
+#       'Jonnitto.MultiColumn:Mixin4SM2Row': true
+#       'Jonnitto.MultiColumn:Mixin4MD2Row': true
+#       'Jonnitto.MultiColumn:Mixin4LG2Row': true
+#       'Jonnitto.MultiColumn:Mixin4XL2Row': true
+#       'Jonnitto.MultiColumn:MixinAlign': true

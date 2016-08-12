@@ -1,17 +1,17 @@
 'Jonnitto.MultiColumn:Mixin2XS':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXS:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXS'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 10
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               4-8:
                 label: '33% | 66%'
@@ -21,19 +21,19 @@
                 label: '66% | 33%'
 
 'Jonnitto.MultiColumn:Mixin2SM':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutSM:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutSM'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 20
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               2-10:
                 label: '16% | 84%'
@@ -51,19 +51,19 @@
                 label: '84% | 16%'
 
 'Jonnitto.MultiColumn:Mixin2MD':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutMD:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutMD'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 30
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               2-10:
                 label: '16% | 84%'
@@ -81,19 +81,19 @@
                 label: '84% | 16%'
 
 'Jonnitto.MultiColumn:Mixin2LG':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutLG:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutLG'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 40
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               2-10:
                 label: '16% | 84%'
@@ -111,19 +111,19 @@
                 label: '84% | 16%'
 
 'Jonnitto.MultiColumn:Mixin2XL':
-  abstract: TRUE
+  abstract: true
   properties:
     layoutXL:
       type: string
       ui:
         label: 'Jonnitto.MultiColumn:NodeTypes.MixinScreen:properties.layoutXL'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: column
           position: 50
           editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
-            allowEmpty: TRUE
+            allowEmpty: true
             values:
               2-10:
                 label: '16% | 84%'

@@ -1,0 +1,76 @@
+prototype(MC:Media) < prototype(NT:Content) {
+	isContentElement = true
+	configuration = ${Configuration.setting('Jonnitto.MultiColumn.Media')}
+	containerFluid = ${this.configuration.containerFluid}
+	childCount = ${q(node).children('media').children().count()}
+	dimensionsWidth = ${this.configuration.baseWith / this.childCount}
+	mode = NT:PropertyFromConfigIfNotSet {
+		property = 'mode'
+		default = ${Configuration.setting('Jonnitto.MultiColumn.Media.defaultMode')}
+	}
+
+	@context {
+		configuration = ${this.configuration}
+		mode = ${this.mode}
+		childCount = ${this.childCount}
+		dimensionsWidth = ${this.dimensionsWidth}
+	}
+
+	content = ContentCollection {
+		nodePath = 'media'
+		attributes.class = TS:RawArray {
+			row = ${configuration.class.row}
+			mode = ${'jonnitto-multicolumn-media--' + mode}
+		}
+	}
+
+	prototype(NT:Image) {
+		attributes.style = MC:MediaStyle
+	}
+
+	prototype(Jonnitto.PrettyEmbedYoutube) {
+		maximumWidth = MC:MediaWidth
+		attributes.style = MC:MediaStyle
+	}
+
+	prototype(Jonnitto.Plyr:Video) {
+		videoAttributes.poster.maximumWidth = MC:MediaWidth
+		attributes.style = MC:MediaStyle
+	}
+
+	prototype(NT:Plainimage) {
+		maximumWidth = MC:MediaWidth
+	}
+
+	@if.render = true
+}
+
+prototype(MC:MediaWidth) < prototype(TS:Case) {
+	asset = ${q(node).property('image')}
+	@ignoreProperties = ${['asset']}
+	@context.asset = ${this.asset}
+
+	isHeight {
+		condition = ${mode == 'height' && asset}
+		renderer = ${Math.ceil(dimensionsWidth * asset.width / asset.height)}
+	}
+	isWidth {
+		condition = true
+		renderer = ${dimensionsWidth}
+	}
+}
+
+prototype(MC:MediaStyle) < prototype(TS:Case) {
+	asset = ${q(node).property('image')}
+	@ignoreProperties = ${['asset']}
+	@context.asset = ${this.asset}
+
+	isHeight {
+		condition = ${mode == 'height' && asset}
+		renderer = ${'flex:' + (asset.width / asset.height) + ' 1 0%;'}
+	}
+	isWidth {
+		condition = true
+		renderer = 'flex:1 1 0%;'
+	}
+}
