@@ -10,9 +10,7 @@ $mediarow-gutter-lg: 24px !default;
 	$mediarow-half-md: $mediarow-gutter-md / 2;
 	$mediarow-half-lg: $mediarow-gutter-lg / 2;
 
-	&.jonnitto-multicolumn-media--row {
-		margin: 0 -#{$mediarow-half-md};
-	}
+	margin: 0 -#{$mediarow-half-md};
 
 	&::after {
 		content: '';
@@ -44,10 +42,7 @@ $mediarow-gutter-lg: 24px !default;
 	@media (min-width: $mediarow-breakpoint-sm) {
 		display: flex;
 		flex-direction: row;
-
-		&.jonnitto-multicolumn-media--row {
-			margin: 0 -#{$mediarow-half-sm};
-		}
+		margin: 0 -#{$mediarow-half-sm};
 
 		> * {
 			margin: 0 $mediarow-half-sm $mediarow-gutter-sm;
@@ -55,9 +50,7 @@ $mediarow-gutter-lg: 24px !default;
 	}
 
 	@media (min-width: $mediarow-breakpoint-md) {
-		&.jonnitto-multicolumn-media--row {
-			margin: 0 -#{$mediarow-half-md};
-		}
+		margin: 0 -#{$mediarow-half-md};
 
 		> * {
 			margin: 0 $mediarow-half-md $mediarow-gutter-md;
@@ -65,9 +58,7 @@ $mediarow-gutter-lg: 24px !default;
 	}
 
 	@media (min-width: $mediarow-breakpoint-lg) {
-		&.jonnitto-multicolumn-media--row {
-			margin: 0 -#{$mediarow-half-lg};
-		}
+		margin: 0 -#{$mediarow-half-lg};
 
 		> * {
 			margin: 0 $mediarow-half-lg $mediarow-gutter-lg;
