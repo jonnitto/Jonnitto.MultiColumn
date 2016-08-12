@@ -3,7 +3,7 @@ prototype(MC:Media) < prototype(NT:Content) {
 	configuration = ${Configuration.setting('Jonnitto.MultiColumn.Media')}
 	containerFluid = ${this.configuration.containerFluid}
 	childCount = ${q(node).children('media').children().count()}
-	dimensionsWidth = ${this.configuration.baseWith / this.childCount}
+	dimensionsWidth = ${this.childCount ? this.configuration.baseWith / this.childCount : this.configuration.baseWit}
 	mode = NT:PropertyFromConfigIfNotSet {
 		property = 'mode'
 		default = ${Configuration.setting('Jonnitto.MultiColumn.Media.defaultMode')}
