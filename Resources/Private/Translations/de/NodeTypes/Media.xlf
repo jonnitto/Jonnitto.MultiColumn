@@ -15,10 +15,10 @@
 				<source>Standard</source>
 			</trans-unit>
 			<trans-unit id="properties.mode.selectBoxEditor.values.height" xml:space="preserve">
-				<source>Alle Bilder gleich hoch</source>
+				<source>Höhen</source>
 			</trans-unit>
 			<trans-unit id="properties.mode.selectBoxEditor.values.width" xml:space="preserve">
-				<source>Alle Bilder gleich breit</source>
+				<source>Breiten</source>
 			</trans-unit>
 		</body>
 	</file>
