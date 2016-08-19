@@ -18,6 +18,7 @@
       constraints: *columnConstraints
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:3.ui.label'
+    position: 300
   properties:
     layoutMD:
       defaultValue: 4-4-4

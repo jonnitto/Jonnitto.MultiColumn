@@ -20,6 +20,7 @@
       constraints: *columnConstraints
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:4.ui.label'
+    position: 400
 
 
 # To add more options you can add following Mixins to your Settings.yaml
