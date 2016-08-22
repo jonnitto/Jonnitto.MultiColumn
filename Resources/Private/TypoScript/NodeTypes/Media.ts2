@@ -25,7 +25,10 @@ prototype(MC:Media) < prototype(NT:Content) {
 	}
 
 	prototype(NT:Image) {
-		attributes.style = MC:MediaStyle
+		attributes {
+			class.container = false
+			style = MC:MediaStyle
+		}
 	}
 
 	prototype(Jonnitto.PrettyEmbedYoutube) {
