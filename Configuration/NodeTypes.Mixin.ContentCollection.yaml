@@ -1,0 +1,10 @@
+'Jonnitto.MultiColumn:ContentCollection':
+  abstract: true
+  superTypes:
+    'TYPO3.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      'Jonnitto.MultiColumn:2': false
+      'Jonnitto.MultiColumn:3': false
+      'Jonnitto.MultiColumn:4': false
+      'Jonnitto.MultiColumn:Media': false

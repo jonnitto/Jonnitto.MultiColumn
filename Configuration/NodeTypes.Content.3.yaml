@@ -4,18 +4,11 @@
     'Jonnitto.MultiColumn:Mixin3MD': true
   childNodes:
     column-1:
-      type: 'TYPO3.Neos:ContentCollection'
-      constraints: &columnConstraints
-        nodeTypes:
-          'Jonnitto.MultiColumn:2': false
-          'Jonnitto.MultiColumn:3': false
-          'Jonnitto.MultiColumn:4': false
+      type: 'Jonnitto.MultiColumn:ContentCollection'
     column-2:
-      type: 'TYPO3.Neos:ContentCollection'
-      constraints: *columnConstraints
+      type: 'Jonnitto.MultiColumn:ContentCollection'
     column-3:
-      type: 'TYPO3.Neos:ContentCollection'
-      constraints: *columnConstraints
+      type: 'Jonnitto.MultiColumn:ContentCollection'
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:3.ui.label'
     position: 300

@@ -4,14 +4,12 @@
     'Jonnitto.MultiColumn:Mixin2SM': true
   childNodes:
     column-1:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Jonnitto.MultiColumn:ContentCollection'
       constraints: &columnConstraints
         nodeTypes:
           'Jonnitto.MultiColumn:2': true
-          'Jonnitto.MultiColumn:3': false
-          'Jonnitto.MultiColumn:4': false
     column-2:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Jonnitto.MultiColumn:ContentCollection'
       constraints: *columnConstraints
   ui:
     label: 'Jonnitto.MultiColumn:NodeTypes.Column:2.ui.label'

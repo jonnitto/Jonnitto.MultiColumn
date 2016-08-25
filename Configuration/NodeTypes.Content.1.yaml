@@ -5,7 +5,7 @@
     'TYPO3.Neos:Content': true
   childNodes:
     content:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Jonnitto.MultiColumn:ContentCollection'
       constraints:
         nodeTypes:
           'Jonnitto.MultiColumn:1': false
