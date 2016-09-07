@@ -1,5 +1,4 @@
 'Jonnitto.MultiColumn:ContentCollection':
-  abstract: true
   superTypes:
     'TYPO3.Neos:ContentCollection': true
   constraints:
