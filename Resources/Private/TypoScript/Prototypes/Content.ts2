@@ -6,7 +6,7 @@ prototype(MC:Content) < prototype(NT:Content) {
 			prepend = 'row-xs-'
 			property = 'align'
 		}
-		onlyImages = TS:Case {
+		onlyImages = Fusion:Case {
 			@context.contentCount = ${q(node).find('[instanceof TYPO3.Neos:Content]').count()}
 			noContent {
 				condition = ${contentCount == 0}
@@ -31,9 +31,9 @@ prototype(MC:Content) < prototype(NT:Content) {
 		onlyImages = ${onlyImages && !isOnDocument ? onlyImages : false}
 	}
 
-	content = TS:Array {
-		openRow = TS:Tag {
-			attributes.class = TS:RawArray {
+	content = Fusion:Array {
+		openRow = Fusion:Tag {
+			attributes.class = Fusion:RawArray {
 				row = ${mcConfig.rowClass}
 				align = ${align}
 				onlyImages = ${onlyImages}

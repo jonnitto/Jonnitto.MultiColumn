@@ -18,7 +18,7 @@ prototype(MC:Media) < prototype(NT:Content) {
 
 	content = ContentCollection {
 		nodePath = 'media'
-		attributes.class = TS:RawArray {
+		attributes.class = Fusion:RawArray {
 			row = ${configuration.class.row}
 			mode = ${'jonnitto-multicolumn-media--' + mode}
 		}
@@ -48,7 +48,7 @@ prototype(MC:Media) < prototype(NT:Content) {
 	@if.render = true
 }
 
-prototype(MC:MediaWidth) < prototype(TS:Case) {
+prototype(MC:MediaWidth) < prototype(Fusion:Case) {
 	asset = ${q(node).property('image')}
 	@ignoreProperties = ${['asset']}
 	@context.asset = ${this.asset}
@@ -63,7 +63,7 @@ prototype(MC:MediaWidth) < prototype(TS:Case) {
 	}
 }
 
-prototype(MC:MediaStyle) < prototype(TS:Case) {
+prototype(MC:MediaStyle) < prototype(Fusion:Case) {
 	asset = ${q(node).property('image')}
 	@ignoreProperties = ${['asset']}
 	@context.asset = ${this.asset}

@@ -9,7 +9,7 @@ prototype(MC:1) < prototype(NT:Content) {
 prototype(MC:2) < prototype(MC:Content)
 
 prototype(MC:3) < prototype(MC:Content) {
-	@context.layoutSM = TS:Case {
+	@context.layoutSM = Fusion:Case {
 		@context {
 			sm = ${q(node).property('layoutSM')}
 			md = ${q(node).property('layoutMD')}

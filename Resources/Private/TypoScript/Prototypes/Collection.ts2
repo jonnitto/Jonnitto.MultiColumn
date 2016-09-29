@@ -1,4 +1,4 @@
-prototype(MC:Collection) < prototype(TS:Collection) {
+prototype(MC:Collection) < prototype(Fusion:Collection) {
 	collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
 	itemName = 'node'
 	iterationName = 'iteration'
