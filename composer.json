@@ -1,7 +1,7 @@
 {
     "name": "jonnitto/multicolumn",
     "type": "typo3-flow-plugin",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "license": "MIT",
     "description": "MultiColumn System for Neos. Please bring your own css",
     "keywords": ["flow", "neos", "content", "nodetypes", "multicolumn", "grid"],

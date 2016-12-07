@@ -70,12 +70,24 @@ prototype(MC:MediaStyle) < prototype(Fusion:Case) {
 
 	isHeight {
 		condition = ${mode == 'height' && asset}
-		renderer = ${'flex:' + (asset.width / asset.height) + ' 1 0%;'}
+		renderer = MC:MediaFlex
 	}
 	isWidth {
 		condition = true
-		renderer = 'flex:1 1 0%;'
+		renderer = MC:MediaFlex {
+			relation = 1
+		}
 	}
 
 	@if.hasMode = ${mode && !String.isBlank(mode) ? true : false}
+}
+
+prototype(MC:MediaFlex) < prototype(Fusion:Array) {
+	relation = ${asset.width / asset.height}
+	@ignoreProperties = ${['relation']}
+
+	webkitBoxFlex = ${'-webkit-box-flex:' + this.relation + ';'}
+	webkitFlex = ${'-webkit-flex:' + this.relation + ' 1 0%;'}
+	msFlex = ${'-ms-flex:' + this.relation + ' 1 0%;'}
+	flex = ${'flex:' + this.relation + ' 1 0%;'}
 }
