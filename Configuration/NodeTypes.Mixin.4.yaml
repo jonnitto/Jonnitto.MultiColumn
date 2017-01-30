@@ -9,7 +9,7 @@
         inspector:
           group: column
           position: 10
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -27,7 +27,7 @@
         inspector:
           group: column
           position: 20
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -45,7 +45,7 @@
         inspector:
           group: column
           position: 30
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -63,7 +63,7 @@
         inspector:
           group: column
           position: 40
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -81,7 +81,7 @@
         inspector:
           group: column
           position: 50
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -99,7 +99,7 @@
         inspector:
           group: column
           position: 10
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -121,7 +121,7 @@
         inspector:
           group: column
           position: 20
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -143,7 +143,7 @@
         inspector:
           group: column
           position: 30
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -165,7 +165,7 @@
         inspector:
           group: column
           position: 40
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:
@@ -187,7 +187,7 @@
         inspector:
           group: column
           position: 50
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
             values:

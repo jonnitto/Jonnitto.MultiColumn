@@ -1,20 +1,20 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        'Jonnitto.MultiColumn': true
-
-    userInterface:
-      translation:
-        autoInclude:
-          'Jonnitto.MultiColumn': ['NodeTypes/*']
 
 Jonnitto:
   MultiColumn:
     rowClass: row
     Media:
-      defaultMode: height # height || width || false
+      defaultMode: height
       baseWidth: 1440
       class:
         containerFluid: false
         row: jonnitto-multicolumn-media--row
+Neos:
+  Neos:
+    typoScript:
+      autoInclude:
+        Jonnitto.MultiColumn: true
+    userInterface:
+      translation:
+        autoInclude:
+          Jonnitto.MultiColumn:
+            - 'NodeTypes/*'

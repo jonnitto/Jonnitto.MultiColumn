@@ -3,7 +3,7 @@
 'Jonnitto.MultiColumn:1':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   childNodes:
     content:
       type: 'Jonnitto.MultiColumn:ContentCollection'
