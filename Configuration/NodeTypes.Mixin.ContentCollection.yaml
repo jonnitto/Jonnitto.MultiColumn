@@ -1,6 +1,7 @@
+
 'Jonnitto.MultiColumn:ContentCollection':
   superTypes:
-    'TYPO3.Neos:ContentCollection': true
+    'TYPO3.Neos:ContentCollection': '1'
   constraints:
     nodeTypes:
       'Jonnitto.MultiColumn:2': false

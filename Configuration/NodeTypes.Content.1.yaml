@@ -1,8 +1,9 @@
 # If you want to use this 1 Column (for fancy css stuff), just put abstract to false
+
 'Jonnitto.MultiColumn:1':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Content': true
+    'TYPO3.Neos:Content': '1'
   childNodes:
     content:
       type: 'Jonnitto.MultiColumn:ContentCollection'

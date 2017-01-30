@@ -1,7 +1,8 @@
+
 'Jonnitto.MultiColumn:3':
   superTypes:
-    'Jonnitto.MultiColumn:Column': true
-    'Jonnitto.MultiColumn:Mixin3MD': true
+    'Jonnitto.MultiColumn:Column': '1'
+    'Jonnitto.MultiColumn:Mixin3MD': '1'
   childNodes:
     column-1:
       type: 'Jonnitto.MultiColumn:ContentCollection'
@@ -15,23 +16,3 @@
   properties:
     layoutMD:
       defaultValue: 4-4-4
-
-# To add more options you can add following Mixins to your Settings.yaml
-# 'Jonnitto.MultiColumn:3':
-#     superTypes:
-#       'Jonnitto.MultiColumn:Mixin3XS': true
-#       'Jonnitto.MultiColumn:Mixin3SM': true
-#       'Jonnitto.MultiColumn:Mixin3MD': true
-#       'Jonnitto.MultiColumn:Mixin3LG': true
-#       'Jonnitto.MultiColumn:Mixin3XL': true
-#       'Jonnitto.MultiColumn:MixinAlign': true
-
-# With 2 Rows
-# 'Jonnitto.MultiColumn:3':
-#     superTypes:
-#       'Jonnitto.MultiColumn:Mixin3XS2Row': true
-#       'Jonnitto.MultiColumn:Mixin3SM2Row': true
-#       'Jonnitto.MultiColumn:Mixin3MD2Row': true
-#       'Jonnitto.MultiColumn:Mixin3LG2Row': true
-#       'Jonnitto.MultiColumn:Mixin3XL2Row': true
-#       'Jonnitto.MultiColumn:MixinAlign': true
