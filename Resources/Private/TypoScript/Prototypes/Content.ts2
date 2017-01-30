@@ -7,7 +7,7 @@ prototype(MC:Content) < prototype(NT:Content) {
 			property = 'align'
 		}
 		onlyImages = Fusion:Case {
-			@context.contentCount = ${q(node).find('[instanceof TYPO3.Neos:Content]').count()}
+			@context.contentCount = ${q(node).find('[instanceof Neos.Neos:Content]').count()}
 			noContent {
 				condition = ${contentCount == 0}
 				renderer = false

@@ -1,5 +1,5 @@
 prototype(MC:Collection) < prototype(Fusion:Collection) {
-	collection = ${q(node).children('[instanceof TYPO3.Neos:ContentCollection]')}
+	collection = ${q(node).children('[instanceof Neos.Neos:ContentCollection]')}
 	itemName = 'node'
 	iterationName = 'iteration'
 	itemRenderer = MC:ContentCollection
