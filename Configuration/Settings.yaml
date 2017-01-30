@@ -10,11 +10,11 @@ Jonnitto:
         row: jonnitto-multicolumn-media--row
 Neos:
   Neos:
-    typoScript:
-      autoInclude:
-        Jonnitto.MultiColumn: true
     userInterface:
       translation:
         autoInclude:
           Jonnitto.MultiColumn:
             - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        Jonnitto.MultiColumn: true
