@@ -1,8 +1,8 @@
 
 'Jonnitto.MultiColumn:3':
   superTypes:
-    'Jonnitto.MultiColumn:Column': '1'
-    'Jonnitto.MultiColumn:Mixin3MD': '1'
+    'Jonnitto.MultiColumn:Column': true
+    'Jonnitto.MultiColumn:Mixin3MD': true
   childNodes:
     column-1:
       type: 'Jonnitto.MultiColumn:ContentCollection'
