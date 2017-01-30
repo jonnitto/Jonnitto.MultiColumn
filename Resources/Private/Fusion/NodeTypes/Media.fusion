@@ -1,3 +1,5 @@
+// Namespaces are defined in "Root.fusion"
+
 prototype(MC:Media) < prototype(NT:Content) {
 	isContentElement = true
 	configuration = ${Configuration.setting('Jonnitto.MultiColumn.Media')}

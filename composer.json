@@ -1,7 +1,6 @@
 {
     "name": "jonnitto/multicolumn",
     "type": "typo3-flow-plugin",
-    "version": "0.1.5",
     "license": "MIT",
     "description": "MultiColumn System for Neos. Please bring your own css",
     "keywords": [
@@ -21,12 +20,12 @@
         }
     ],
     "require": {
-        "typo3/neos": "2.*",
+        "typo3/neos": "3.*",
         "jonnitto/nodetypes": "*"
     },
     "autoload": {
-        "psr-0": {
-            "Jonnitto\\MultiColumn": "Classes"
+        "psr-4": {
+            "Jonnitto\\MultiColumn\\": "Classes"
         }
     },
     "extra": {

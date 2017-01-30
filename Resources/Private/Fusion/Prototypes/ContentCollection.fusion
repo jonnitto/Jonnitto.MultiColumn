@@ -1,3 +1,5 @@
+// Namespaces are defined in "Root.fusion"
+
 prototype(MC:ContentCollection) < prototype(ContentCollection) {
 	attributes = Fusion:Attributes {
 		class = Fusion:RawArray {
