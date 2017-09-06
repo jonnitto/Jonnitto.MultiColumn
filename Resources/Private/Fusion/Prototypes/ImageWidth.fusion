@@ -1,0 +1,8 @@
+
+prototype(Jonnitto.ImagesInARow:ImageWidth) < prototype(Fusion:Value) {
+	asset = ${asset ? asset : false}
+	width = ${dimensionsWidth ? dimensionsWidth : false}
+
+	@if.hasAssetAndWith = ${this.asset && this.width ? true : false}
+	value = ${Math.ceil(this.width * this.asset.width / this.asset.height)}
+}

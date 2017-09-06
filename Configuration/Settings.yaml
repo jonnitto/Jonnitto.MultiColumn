@@ -1,20 +1,17 @@
-
 Jonnitto:
-  MultiColumn:
-    rowClass: row
-    Media:
-      defaultMode: height
-      baseWidth: 1440
-      class:
-        containerFluid: false
-        row: jonnitto-multicolumn-media--row
+  ImagesInARow:
+    baseWidth: 1440
+    class:
+      containerFluid: false
+      row: jonnitto-imagesinarow-media--row
+
 Neos:
   Neos:
     userInterface:
       translation:
         autoInclude:
-          Jonnitto.MultiColumn:
+          Jonnitto.ImagesInARow:
             - 'NodeTypes/*'
     fusion:
       autoInclude:
-        Jonnitto.MultiColumn: true
+        Jonnitto.ImagesInARow: true
