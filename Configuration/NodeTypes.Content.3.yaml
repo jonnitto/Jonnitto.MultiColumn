@@ -1,0 +1,18 @@
+
+'Jonnitto.MultiColumn:3':
+  superTypes:
+    'Jonnitto.MultiColumn:Column': true
+    'Jonnitto.MultiColumn:Mixin3MD': true
+  childNodes:
+    column-1:
+      type: 'Jonnitto.MultiColumn:ContentCollection'
+    column-2:
+      type: 'Jonnitto.MultiColumn:ContentCollection'
+    column-3:
+      type: 'Jonnitto.MultiColumn:ContentCollection'
+  ui:
+    label: 'Jonnitto.MultiColumn:NodeTypes.Column:3.ui.label'
+    position: 300
+  properties:
+    layoutMD:
+      defaultValue: 4-4-4

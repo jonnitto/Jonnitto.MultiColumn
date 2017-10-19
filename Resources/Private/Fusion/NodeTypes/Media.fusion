@@ -1,0 +1,95 @@
+// Namespaces are defined in "Root.fusion"
+
+prototype(MC:Media) < prototype(NT:Content) {
+	isContentElement = true
+	configuration = ${Configuration.setting('Jonnitto.MultiColumn.Media')}
+	containerFluid = ${this.configuration.containerFluid}
+	childCount = ${q(node).children('media').children().count()}
+	dimensionsWidth = ${this.childCount ? this.configuration.baseWidth / this.childCount : this.configuration.baseWidth}
+	mode = NT:PropertyFromConfigIfNotSet {
+		property = 'mode'
+		default = ${Configuration.setting('Jonnitto.MultiColumn.Media.defaultMode')}
+	}
+
+	@context {
+		configuration = ${this.configuration}
+		mode = ${this.mode}
+		childCount = ${this.childCount}
+		dimensionsWidth = ${this.dimensionsWidth}
+	}
+
+	content = ContentCollection {
+		nodePath = 'media'
+		attributes.class = Fusion:RawArray {
+			row = ${configuration.class.row}
+			mode = ${'jonnitto-multicolumn-media--' + mode}
+		}
+	}
+
+	prototype(NT:Image) {
+		attributes {
+			class.container = false
+			style = MC:MediaStyle
+		}
+	}
+
+	prototype(Jonnitto.PrettyEmbedYoutube) {
+		maximumWidth = MC:MediaWidth
+		attributes.style = MC:MediaStyle
+	}
+
+	prototype(Jonnitto.Plyr:Video) {
+		videoAttributes.poster.maximumWidth = MC:MediaWidth
+		attributes.style = MC:MediaStyle
+	}
+
+	prototype(NT:Plainimage) {
+		maximumWidth = MC:MediaWidth
+	}
+
+	@if.render = true
+}
+
+prototype(MC:MediaWidth) < prototype(Fusion:Case) {
+	asset = ${q(node).property('image')}
+	@ignoreProperties = ${['asset']}
+	@context.asset = ${this.asset}
+
+	isHeight {
+		condition = ${mode == 'height' && asset}
+		renderer = ${Math.ceil(dimensionsWidth * asset.width / asset.height)}
+	}
+	isWidth {
+		condition = true
+		renderer = ${dimensionsWidth}
+	}
+}
+
+prototype(MC:MediaStyle) < prototype(Fusion:Case) {
+	asset = ${q(node).property('image')}
+	@ignoreProperties = ${['asset']}
+	@context.asset = ${this.asset}
+
+	isHeight {
+		condition = ${mode == 'height' && asset}
+		renderer = MC:MediaFlex
+	}
+	isWidth {
+		condition = true
+		renderer = MC:MediaFlex {
+			relation = 1
+		}
+	}
+
+	@if.hasMode = ${mode && !String.isBlank(mode) ? true : false}
+}
+
+prototype(MC:MediaFlex) < prototype(Fusion:Array) {
+	relation = ${asset.width / asset.height}
+	@ignoreProperties = ${['relation']}
+
+	webkitBoxFlex = ${'-webkit-box-flex:' + this.relation + ';'}
+	webkitFlex = ${'-webkit-flex:' + this.relation + ' 1 0%;'}
+	msFlex = ${'-ms-flex:' + this.relation + ' 1 0%;'}
+	flex = ${'flex:' + this.relation + ' 1 0%;'}
+}

@@ -1,0 +1,48 @@
+// Namespaces are defined in "Root.fusion"
+
+prototype(MC:1) < prototype(NT:Content) {
+	isContentElement = true
+	content = ContentCollection {
+		nodePath = 'content'
+	}
+	@if.render = true
+}
+
+prototype(MC:2) < prototype(MC:Content)
+
+prototype(MC:3) < prototype(MC:Content) {
+	@context.layoutSM = Fusion:Case {
+		@context {
+			sm = ${q(node).property('layoutSM')}
+			md = ${q(node).property('layoutMD')}
+		}
+
+		dontOverwrite {
+			condition = ${sm != null}
+			renderer = ${sm}
+		}
+
+		bigColFirst {
+			condition = ${md == '6-3-3'}
+			renderer = '12-6-6'
+		}
+
+		bigColLast {
+			condition = ${md == '3-3-6'}
+			renderer = '6-6-12'
+		}
+
+		default {
+			condition = true
+			renderer = ${sm}
+		}
+	}
+}
+
+prototype(MC:4) < prototype(MC:Content) {
+	prototype(MC:ContentCollection).attributes.class {
+		@context.hasNoLayout = ${!layoutXS && !layoutSM && !layoutMD && !layoutLG && !layoutXL}
+		sm = ${layoutSM ? 'col-sm-' + String.split(layoutSM, '-')[iteration.index] : hasNoLayout ? 'col-sm-6' : false}
+		md = ${layoutMD ? 'col-md-' + String.split(layoutMD, '-')[iteration.index] : hasNoLayout ? 'col-md-3' : false}
+	}
+}

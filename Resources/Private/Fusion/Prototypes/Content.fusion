@@ -1,0 +1,52 @@
+// Namespaces are defined in "Root.fusion"
+
+prototype(MC:Content) < prototype(NT:Content) {
+	@context {
+		mcConfig = ${Configuration.setting('Jonnitto.MultiColumn')}
+		needContainer = ${this.isOnDocument && this.isContentElement}
+		align = NT:WrapIfPropertyIsSet {
+			prepend = 'row-xs-'
+			property = 'align'
+		}
+		onlyImages = Fusion:Case {
+			@context.contentCount = ${q(node).find('[instanceof Neos.Neos:Content]').count()}
+			noContent {
+				condition = ${contentCount == 0}
+				renderer = false
+			}
+			onlyImages {
+				condition = ${q(node).find('[instanceof Jonnitto.NodeTypes:Image][image]').count() == contentCount}
+				renderer = 'row-only-images'
+			}
+		}
+		layoutXS = ${q(node).property('layoutXS')}
+		layoutSM = ${q(node).property('layoutSM')}
+		layoutMD = ${q(node).property('layoutMD')}
+		layoutLG = ${q(node).property('layoutLG')}
+		layoutXL = ${q(node).property('layoutXL')}
+	}
+	isContentElement = true
+
+	attributes.class {
+		row = ${needContainer ? false : mcConfig.rowClass}
+		align = ${align && !isOnDocument ? align : false}
+		onlyImages = ${onlyImages && !isOnDocument ? onlyImages : false}
+	}
+
+	content = Fusion:Array {
+		openRow = Fusion:Tag {
+			attributes.class = Fusion:RawArray {
+				row = ${mcConfig.rowClass}
+				align = ${align}
+				onlyImages = ${onlyImages}
+			}
+			omitClosingTag = true
+			@if.needContainer = ${needContainer}
+			@position = 'start'
+		}
+		columns = MC:Collection
+		closeRow = ${needContainer ? '</div>' : ''}
+		closeRow.@position = 'end'
+	}
+	@if.render = true
+}

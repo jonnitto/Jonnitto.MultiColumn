@@ -1,11 +1,10 @@
-'Jonnitto.ImagesInARow:ContentCollection':
+
+'Jonnitto.MultiColumn:ContentCollection':
   superTypes:
     'Neos.Neos:ContentCollection': true
   constraints:
     nodeTypes:
-      '*': false
-      'Neos.NodeTypes:Image': true
-      'Jonnitto.NodeTypes:Image': true
-      'Jonnitto.Image:Image': true
-      'Jonnitto.Picture:Picture': true
-      'Carbon.Image:Image': true
+      'Jonnitto.MultiColumn:2': false
+      'Jonnitto.MultiColumn:3': false
+      'Jonnitto.MultiColumn:4': false
+      'Jonnitto.MultiColumn:Media': false
