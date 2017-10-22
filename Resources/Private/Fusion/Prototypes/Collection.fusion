@@ -1,8 +1,8 @@
 // Namespaces are defined in "Root.fusion"
 
-prototype(MC:Collection) < prototype(Fusion:Collection) {
-	collection = ${q(node).children('[instanceof Neos.Neos:ContentCollection]')}
-	itemName = 'node'
-	iterationName = 'iteration'
-	itemRenderer = MC:ContentCollection
+prototype(Jonnitto.MultiColumn:Collection) < prototype(Neos.Fusion:Collection) {
+    collection = ${q(node).children('[instanceof Neos.Neos:ContentCollection]')}
+    itemName = 'node'
+    iterationName = 'iteration'
+    itemRenderer = Jonnitto.MultiColumn:ContentCollection
 }

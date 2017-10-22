@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="Jonnitto.MultiColumn" source-language="en" datatype="plaintext">
-		<body>
-			<trans-unit id="groups.column" xml:space="preserve">
-				<source>Layout of columns from…</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutXS" xml:space="preserve">
-				<source>tiny screens (Smartphones)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutSM" xml:space="preserve">
-				<source>small screens (Tablets)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutMD" xml:space="preserve">
-				<source>medium screens (Laptops)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutLG" xml:space="preserve">
-				<source>large screens (Desktops)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutXL" xml:space="preserve">
-				<source>huge screens (Workstations)</source>
-			</trans-unit>
-			<trans-unit id="values.group.one" xml:space="preserve">
-				<source>One row</source>
-			</trans-unit>
-			<trans-unit id="values.group.two" xml:space="preserve">
-				<source>Two rows</source>
-			</trans-unit>
-		</body>
-	</file>
+    <file original="" product-name="Jonnitto.MultiColumn" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="groups.column" xml:space="preserve">
+                <source>Layout of columns from…</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutXS" xml:space="preserve">
+                <source>tiny screens (Smartphones)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutSM" xml:space="preserve">
+                <source>small screens (Tablets)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutMD" xml:space="preserve">
+                <source>medium screens (Laptops)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutLG" xml:space="preserve">
+                <source>large screens (Desktops)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutXL" xml:space="preserve">
+                <source>huge screens (Workstations)</source>
+            </trans-unit>
+            <trans-unit id="values.group.one" xml:space="preserve">
+                <source>One row</source>
+            </trans-unit>
+            <trans-unit id="values.group.two" xml:space="preserve">
+                <source>Two rows</source>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

@@ -19,12 +19,12 @@
           editorOptions:
             allowEmpty: true
             values:
-              top:
+              start:
                 label: i18n
                 icon: icon-long-arrow-up
-              middle:
+              center:
                 label: i18n
                 icon: icon-arrows-v
-              bottom:
+              end:
                 label: i18n
                 icon: icon-long-arrow-down

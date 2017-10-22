@@ -1,5 +1,1 @@
-namespace: Fusion = Neos.Fusion
-namespace: NT = Jonnitto.NodeTypes
-namespace: MC = Jonnitto.MultiColumn
-
 include: **/*.fusion

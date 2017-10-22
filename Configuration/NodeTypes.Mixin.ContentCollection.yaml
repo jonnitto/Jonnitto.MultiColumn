@@ -1,4 +1,3 @@
-
 'Jonnitto.MultiColumn:ContentCollection':
   superTypes:
     'Neos.Neos:ContentCollection': true
@@ -7,4 +6,3 @@
       'Jonnitto.MultiColumn:2': false
       'Jonnitto.MultiColumn:3': false
       'Jonnitto.MultiColumn:4': false
-      'Jonnitto.MultiColumn:Media': false

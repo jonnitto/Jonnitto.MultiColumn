@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="Jonnitto.MultiColumn" source-language="de" datatype="plaintext">
-		<body>
-			<trans-unit id="properties.layoutXS" xml:space="preserve">
-				<source>winzigen Bildschirmen (Smartphones)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutSM" xml:space="preserve">
-				<source>kleinen Bildschirmen (Tablets)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutMD" xml:space="preserve">
-				<source>mittleren Bildschirmen (Laptops)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutLG" xml:space="preserve">
-				<source>großen Bildschirmen (Desktops)</source>
-			</trans-unit>
-			<trans-unit id="properties.layoutXL" xml:space="preserve">
-				<source>riesigen Bildschirmen (Workstations)</source>
-			</trans-unit>
-			<trans-unit id="values.group.one" xml:space="preserve">
-				<source>Eine Reihe</source>
-			</trans-unit>
-			<trans-unit id="values.group.two" xml:space="preserve">
-				<source>Zwei Reihen</source>
-			</trans-unit>
-		</body>
-	</file>
+    <file original="" product-name="Jonnitto.MultiColumn" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.layoutXS" xml:space="preserve">
+                <source>winzigen Bildschirmen (Smartphones)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutSM" xml:space="preserve">
+                <source>kleinen Bildschirmen (Tablets)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutMD" xml:space="preserve">
+                <source>mittleren Bildschirmen (Laptops)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutLG" xml:space="preserve">
+                <source>großen Bildschirmen (Desktops)</source>
+            </trans-unit>
+            <trans-unit id="properties.layoutXL" xml:space="preserve">
+                <source>riesigen Bildschirmen (Workstations)</source>
+            </trans-unit>
+            <trans-unit id="values.group.one" xml:space="preserve">
+                <source>Eine Reihe</source>
+            </trans-unit>
+            <trans-unit id="values.group.two" xml:space="preserve">
+                <source>Zwei Reihen</source>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

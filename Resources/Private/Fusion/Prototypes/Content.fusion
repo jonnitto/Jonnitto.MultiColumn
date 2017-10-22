@@ -1,52 +1,47 @@
-// Namespaces are defined in "Root.fusion"
+prototype(Jonnitto.MultiColumn:Content) < prototype(Neos.Fusion:Tag) {
+    config = ${Configuration.setting('Jonnitto.MultiColumn')}
+    container = ${this.config.container}
+    row = ${this.config.row}
+    layoutXS = ${q(node).property('layoutXS')}
+    layoutSM = ${q(node).property('layoutSM')}
+    layoutMD = ${q(node).property('layoutMD')}
+    layoutLG = ${q(node).property('layoutLG')}
+    layoutXL = ${q(node).property('layoutXL')}
+    align = ${q(node).property('align')}
+    alignment = ${this.align ? 'align-items-' + this.align : false}
 
-prototype(MC:Content) < prototype(NT:Content) {
-	@context {
-		mcConfig = ${Configuration.setting('Jonnitto.MultiColumn')}
-		needContainer = ${this.isOnDocument && this.isContentElement}
-		align = NT:WrapIfPropertyIsSet {
-			prepend = 'row-xs-'
-			property = 'align'
-		}
-		onlyImages = Fusion:Case {
-			@context.contentCount = ${q(node).find('[instanceof Neos.Neos:Content]').count()}
-			noContent {
-				condition = ${contentCount == 0}
-				renderer = false
-			}
-			onlyImages {
-				condition = ${q(node).find('[instanceof Jonnitto.NodeTypes:Image][image]').count() == contentCount}
-				renderer = 'row-only-images'
-			}
-		}
-		layoutXS = ${q(node).property('layoutXS')}
-		layoutSM = ${q(node).property('layoutSM')}
-		layoutMD = ${q(node).property('layoutMD')}
-		layoutLG = ${q(node).property('layoutLG')}
-		layoutXL = ${q(node).property('layoutXL')}
-	}
-	isContentElement = true
+    @context {
+        container = ${this.container}
+        row = ${this.row}
+        layoutXS = ${this.layoutXS}
+        layoutSM = ${this.layoutSM}
+        layoutMD = ${this.layoutMD}
+        layoutLG = ${this.layoutLG}
+        layoutXL = ${this.layoutXL}
+        alignment = ${this.alignment}
+    }
 
-	attributes.class {
-		row = ${needContainer ? false : mcConfig.rowClass}
-		align = ${align && !isOnDocument ? align : false}
-		onlyImages = ${onlyImages && !isOnDocument ? onlyImages : false}
-	}
+    attributes.class = Neos.Fusion:RawArray {
+        nodeType = ${String.toLowerCase(String.pregReplace(q(node).property('_nodeType.name'), '/[[:^alnum:]]/', '-'))}
+        container = ${container ? container : row}
+        alignment = ${container ? false : alignment}
+    }
 
-	content = Fusion:Array {
-		openRow = Fusion:Tag {
-			attributes.class = Fusion:RawArray {
-				row = ${mcConfig.rowClass}
-				align = ${align}
-				onlyImages = ${onlyImages}
-			}
-			omitClosingTag = true
-			@if.needContainer = ${needContainer}
-			@position = 'start'
-		}
-		columns = MC:Collection
-		closeRow = ${needContainer ? '</div>' : ''}
-		closeRow.@position = 'end'
-	}
-	@if.render = true
+    content = Jonnitto.MultiColumn:Collection {
+        @process.addRow = Neos.Fusion:Tag {
+            attributes.class = Neos.Fusion:RawArray {
+                row = ${row}
+                alignment = ${alignment}
+            }
+            content = ${value}
+            @if.needContainer = ${container ? true : false}
+        }
+    }
+
+    @process.contentElementWrapping {
+        expression = Neos.Neos:ContentElementWrapping
+        @position = 'end 999999999'
+    }
+    @exceptionHandler = 'Neos\\Neos\\Fusion\\ExceptionHandlers\\NodeWrappingHandler'
+
 }
