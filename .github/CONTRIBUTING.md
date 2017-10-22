@@ -2,11 +2,7 @@
 
 I love to welcome your contributions. There are several ways to help out:
 
-<<<<<<< HEAD
 * Create an [issue](https://github.com/jonnitto/Jonnitto.MultiColumn/issues) on GitHub, if you have found a bug
-=======
-* Create an [issue](https://github.com/jonnitto/Jonnitto.ImagesInARow/issues) on GitHub, if you have found a bug
->>>>>>> 8e2a06a849e136cef80e2d71032098e894b4412f
 * Write test cases or provide examples for open bug issues
 * Write patches for open bug/feature issues, preferably with test cases included
 
@@ -18,11 +14,7 @@ chance of keeping on top of things.
 ## Getting Started
 
 * Make sure you have a [GitHub account](https://github.com/signup/free).
-<<<<<<< HEAD
 * Submit an [issue](https://github.com/jonnitto/Jonnitto.MultiColumn/issues), assuming one does not already exist.
-=======
-* Submit an [issue](https://github.com/jonnitto/Jonnitto.ImagesInARow/issues), assuming one does not already exist.
->>>>>>> 8e2a06a849e136cef80e2d71032098e894b4412f
   * Clearly describe the issue including steps to reproduce when it is a bug.
   * Make sure you fill in the earliest version that you know has the issue.
 * Fork the repository on GitHub.
