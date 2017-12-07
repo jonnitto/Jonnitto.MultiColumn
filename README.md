@@ -1,9 +1,14 @@
-Jonnitto.MultiColumn
-====================
-
 [![Latest Stable Version](https://poser.pugx.org/jonnitto/multicolumn/v/stable)](https://packagist.org/packages/jonnitto/multicolumn)
 [![Total Downloads](https://poser.pugx.org/jonnitto/multicolumn/downloads)](https://packagist.org/packages/jonnitto/multicolumn)
-[![License](https://poser.pugx.org/jonnitto/multicolumn/license)](https://packagist.org/packages/jonnitto/multicolumn)
+[![License](https://poser.pugx.org/jonnitto/multicolumn/license)](LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/jonnitto/Jonnitto.MultiColumn.svg?style=social&label=Fork)](https://github.com/jonnitto/Jonnitto.MultiColumn/fork)
+[![GitHub stars](https://img.shields.io/github/stars/jonnitto/Jonnitto.MultiColumn.svg?style=social&label=Stars)](https://github.com/jonnitto/Jonnitto.MultiColumn/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/jonnitto/Jonnitto.MultiColumn.svg?style=social&label=Watch)](https://github.com/jonnitto/Jonnitto.MultiColumn/subscription)
+[![GitHub followers](https://img.shields.io/github/followers/jonnitto.svg?style=social&label=Follow)](https://github.com/jonnitto/followers)
+[![Follow Jon on Twitter](https://img.shields.io/twitter/follow/jonnitto.svg?style=social&label=Follow)](https://twitter.com/jonnitto)
+
+Jonnitto.MultiColumn
+====================
 
 MultiColumn System for [Neos](https://neos.io). Please bring your own css
 
