@@ -1,10 +1,8 @@
-// Namespaces are defined in "Root.fusion"
-
 prototype(Jonnitto.MultiColumn:1) < prototype(Neos.Fusion:Tag) {
 
     attributes.class = ${String.toLowerCase(String.pregReplace(q(node).property('_nodeType.name'), '/[[:^alnum:]]/', '-'))}
 
-    content = ContentCollection {
+    content = Neos.Neos:ContntCollection {
         nodePath = 'content'
     }
 
