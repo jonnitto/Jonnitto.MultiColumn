@@ -1,4 +1,4 @@
-prototype(Jonnitto.MultiColumn:ContentCollection) < prototype(ContentCollection) {
+prototype(Jonnitto.MultiColumn:ContentCollection) < prototype(Neos.Neos:ContentCollection) {
     attributes.class = Neos.Fusion:RawArray {
         xs = ${layoutXS ? 'col-' + String.split(layoutXS, '-')[iteration.index] : false}
         sm = ${layoutSM ? 'col-sm-' + String.split(layoutSM, '-')[iteration.index] : false}
